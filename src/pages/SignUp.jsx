@@ -46,7 +46,7 @@ function SignUp() {
 
             navigate('/');
         } catch (err) {
-            toast.error('Something went wrong. Please try again later!');
+            toast.err('Something went wrong. Please try again later!');
         }
     }
 

@@ -34,7 +34,7 @@ function SignIn() {
                 navigate('/');
             }
         } catch (err) {
-            toast.error('Bad User Credentials');
+            toast.error('Bad User Credentials!');
         }
     }
 
