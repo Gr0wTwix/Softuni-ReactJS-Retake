@@ -135,7 +135,7 @@ function Profile() {
                             id='name'
                             className={!changeDetails ? 'profileName' : 'profileNameActive'}
                             disabled={!changeDetails}
-                            value={name}
+                            value={`Name: ${name}`}
                             onChange={onChange}
                         />
                         <input
@@ -143,7 +143,7 @@ function Profile() {
                             id='email'
                             className={!changeDetails ? 'profileEmail' : 'profileEmailActive'}
                             disabled={!changeDetails}
-                            value={email}
+                            value={`Email: ${email}`}
                             onChange={onChange}
                         />
                     </form>

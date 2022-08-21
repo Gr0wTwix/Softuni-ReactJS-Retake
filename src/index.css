@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -9,10 +10,12 @@ html::-webkit-scrollbar {
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background-color: #f2f4f8;
   margin: 0;
   box-sizing: border-box;
+  background-color: #cacaf5;
 }
+
+
 
 a {
   text-decoration: none;
@@ -41,7 +44,9 @@ button {
   padding: 0 3rem;
   font-size: 1rem;
 }
+
 @media (min-width: 1100px) {
+
   .input,
   .passwordInput,
   .emailInput,
@@ -78,6 +83,7 @@ button {
   top: -3%;
   right: -2%;
 }
+
 .editIcon {
   cursor: pointer;
   position: absolute;
@@ -93,7 +99,9 @@ button {
 .explore {
   margin: 1rem;
 }
+
 @media (min-width: 1024px) {
+
   .pageContainer,
   .offers,
   .profile,
@@ -125,18 +133,58 @@ button {
   border-radius: 50%;
   animation: spin 1.2s linear infinite;
 }
+
 @keyframes spin {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
 }
 
+.pageHeader, .exploreCategoryHeading, .exploreHeading {
+  font-weight: 1000;
+  text-transform: uppercase;
+  background-image: linear-gradient(-225deg,
+      #231557 0%,
+      #44107a 29%,
+      #ff1361 67%,
+      #fff800 100%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+}
+
 .pageHeader {
-  font-size: 2rem;
-  font-weight: 800;
+  font-size: 55px;
+}
+
+.exploreCategoryName {
+  font-weight: 1000;
+  text-transform: uppercase;
+  background-image: linear-gradient(-225deg,
+      #231557 0%,
+      #44107a 29%,
+      #ff1361 67%,
+      #fff800 100%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 25px;
 }
 
 .navbar {
@@ -180,6 +228,7 @@ button {
   font-weight: 600;
   color: #8f8f8f;
 }
+
 .navbarListItemNameActive {
   color: #2c2c2c;
 }
@@ -214,8 +263,9 @@ button {
 .forgotPasswordLink {
   cursor: pointer;
   color: #00cc66;
-  font-weight: 600;
+  font-weight: 700;
   text-align: right;
+  font-size: 1.5rem;
 }
 
 .signInBar,
@@ -233,7 +283,9 @@ button {
 .signUpText {
   cursor: pointer;
 }
+
 @media (min-width: 1024px) {
+
   .signInBar,
   .signUpBar {
     justify-content: start;
@@ -242,7 +294,7 @@ button {
 
 .signInText,
 .signUpText {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 700;
 }
 
@@ -256,7 +308,9 @@ button {
   background-color: #00cc66;
   border-radius: 50%;
 }
+
 @media (min-width: 1024px) {
+
   .signInButton,
   .signUpButton {
     margin-left: 3rem;
@@ -268,6 +322,7 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: 1.3rem;
 }
 
 .socialIconDiv {
@@ -277,8 +332,8 @@ button {
   align-items: center;
   padding: 0.75rem;
   margin: 1.5rem;
-  width: 3rem;
-  height: 3rem;
+  width: 4rem;
+  height: 4rem;
   background-color: #ffffff;
   border-radius: 50%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
@@ -291,9 +346,10 @@ button {
 .registerLink {
   margin-top: 4rem;
   color: #00cc66;
-  font-weight: 600;
+  font-weight: 700;
   text-align: center;
   margin-bottom: 3rem;
+  font-size: 1.5rem;
 }
 
 @media (min-width: 1217px) {
@@ -301,6 +357,7 @@ button {
     margin-bottom: 10rem;
   }
 }
+
 @media (max-height: 536) {
   .explore {
     margin-bottom: 10rem;
@@ -309,7 +366,8 @@ button {
 
 .exploreHeading,
 .exploreCategoryHeading {
-  font-weight: 700;
+  font-weight: 1000;
+  font-size: 30px;
 }
 
 .exploreCategoryHeading {
@@ -347,6 +405,7 @@ button {
   background-color: rgba(0, 0, 0, 0.8);
   padding: 0.5rem;
 }
+
 @media (min-width: 1024px) {
   .swiperSlideText {
     font-size: 1.75rem;
@@ -364,6 +423,7 @@ button {
   padding: 0.25rem 0.5rem;
   border-radius: 1rem;
 }
+
 @media (min-width: 1024px) {
   .swiperSlidePrice {
     font-size: 1.25rem;
@@ -374,6 +434,7 @@ button {
   display: flex;
   justify-content: space-between;
 }
+
 .exploreCategories a {
   width: 48%;
 }
@@ -388,7 +449,6 @@ button {
 }
 
 .exploreCategoryName {
-  font-weight: 500;
   text-align: left;
 }
 
@@ -404,7 +464,7 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   position: relative;
 }
 
@@ -418,6 +478,7 @@ button {
   border-radius: 1.5rem;
   object-fit: cover;
 }
+
 @media (min-width: 1024px) {
   .categoryListingImg {
     width: 19%;
@@ -428,6 +489,7 @@ button {
 .categoryListingDetails {
   width: 65%;
 }
+
 @media (min-width: 1024px) {
   .categoryListingDetails {
     width: 79%;
@@ -436,21 +498,21 @@ button {
 
 .categoryListingLocation {
   font-weight: 600;
-  font-size: 0.7rem;
+  font-size: 1.5rem;
   opacity: 0.8;
   margin-bottom: 0;
 }
 
 .categoryListingName {
   font-weight: 600;
-  font-size: 1.25rem;
+  font-size: 1.35rem;
   margin: 0;
 }
 
 .categoryListingPrice {
   margin-top: 0.5rem;
   font-weight: 600;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   color: #00cc66;
   margin-bottom: 0;
   display: flex;
@@ -465,7 +527,7 @@ button {
 
 .categoryListingInfoText {
   font-weight: 500;
-  font-size: 0.7rem;
+  font-size: 1rem;
 }
 
 .loadMore {
@@ -537,6 +599,7 @@ button {
   padding: 0;
   list-style-type: none;
 }
+
 .listingDetailsList li {
   margin: 0.3rem 0;
   font-weight: 500;
@@ -555,6 +618,7 @@ button {
   overflow-x: hidden;
   margin-bottom: 3rem;
 }
+
 @media (min-width: 1024px) {
   .leafletContainer {
     height: 400px;
@@ -622,8 +686,8 @@ button {
 .logOut {
   cursor: pointer;
   font-family: 'Montserrat', sans-serif;
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: 1.5rem;
+  font-weight: 700;
   color: #ffffff;
   background-color: #00cc66;
   padding: 0.25rem 0.75rem;
@@ -637,13 +701,14 @@ button {
 }
 
 .personalDetailsText {
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .changePersonalDetails {
   cursor: pointer;
   font-weight: 600;
   color: #00cc66;
+  font-size: 18px;
 }
 
 .profileCard {
@@ -669,7 +734,9 @@ button {
   margin: 0.3rem 0;
   font-weight: 600;
   width: 100%;
+  font-size: 20px;
 }
+
 .profileNameActive {
   background-color: rgba(44, 44, 44, 0.1);
 }
@@ -678,8 +745,9 @@ button {
 .profileAddress,
 .profileAddressActive,
 .profileEmailActive {
-  font-weight: 500;
+  font-weight: 600;
 }
+
 .profileEmailActive {
   background-color: rgba(44, 44, 44, 0.1);
 }
@@ -696,6 +764,7 @@ button {
   margin-top: 2rem;
   font-weight: 600;
   max-width: 500px;
+  font-size: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -703,7 +772,9 @@ button {
 
 .listingText {
   margin-top: 3rem;
+  margin-left: 1rem;
   font-weight: 600;
+  font-size: 20px;
 }
 
 .lisitingsList {
@@ -714,6 +785,7 @@ button {
   font-weight: 600;
   margin-top: 1rem;
   display: block;
+  font-size: 25px;
 }
 
 .formButtons {
@@ -731,12 +803,13 @@ button {
   background-color: #ffffff;
   font-weight: 600;
   border-radius: 1rem;
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin: 0.5rem 0.5rem 0 0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .formButtonActive {
   background-color: #00cc66;
   color: #ffffff;
@@ -755,6 +828,7 @@ button {
   outline: none;
   font-family: 'Montserrat', sans-serif;
 }
+
 .formInputSmall,
 .formInputFile {
   margin-right: 3rem;
@@ -785,13 +859,14 @@ button {
 }
 
 .imagesInfo {
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   opacity: 0.75;
 }
 
 .formInputFile {
-  width: 100%;
+  width: 20%;
 }
+
 .formInputFile::-webkit-file-upload-button {
   background-color: #00cc66;
   border: none;
@@ -804,6 +879,7 @@ button {
 
 .createListingButton {
   margin-top: 5rem;
+  width: 20%
 }
 
 .offers {
